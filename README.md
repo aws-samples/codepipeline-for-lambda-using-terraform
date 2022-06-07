@@ -91,10 +91,10 @@ We will be provisioning AWS Codepipeline and its supporting AWS Services like `A
    3. Select `Security Credentials` from the User information panel.
    4. Scroll down and you should be seeing a subsection `HTTPS Git credentials for AWS CodeCommit`
    5. Click on `Generate Credentials`, you should be prompted with Download credentails in cvs file.
-10.Once git clone and git authentication is sucessfull, cd to cloned directory `cloudcomps_devops_tf123_code_repo`
+10. Once git clone and git authentication is sucessfull, cd to cloned directory `cloudcomps_devops_tf123_code_repo`
 11. copy lambda application code from `lambda_bootstrap` folder to git repo by running `cp -R lambda_bootstrap cloudcomps_devops_tf123_code_repo/`
 12. go to cloned repo `cd cloudcomps_devops_tf123_code_repo`
-13. push changes to git repo by running `git add. && git commit -m "Initial Commit" && git push`
+13. push the changes to git repo by running `git add. && git commit -m "Initial Commit" && git push`
 14. Thats it!, you can now navigate to AWS Codepipeline from `aws console` and check the pipeline status.
 15. If everything goes well, you should be seeing an output simillar to this:   ![codepipeline-output](./img/codepipeline-output.png "codepipeline-output")
 

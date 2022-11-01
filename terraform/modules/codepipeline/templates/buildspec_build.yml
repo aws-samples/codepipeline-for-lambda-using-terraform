@@ -13,7 +13,7 @@ phases:
       - echo `ls -lrt`
       - echo Build started on `date`
       - echo Building the Docker image...          
-      - docker build -t $IMAGE_URI ./lambda
+      - docker build -t $IMAGE_URI ./lambda_bootstrap/lambda/
   post_build:
     commands:
       - bash -c "if [ /"$CODEBUILD_BUILD_SUCCEEDING/" == /"0/" ]; then exit 1; fi"

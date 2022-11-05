@@ -1,6 +1,6 @@
-org_name   = "cloudcomps"
-team_name  = "devops"
-project_id = "tf123"
+org_name   = "ORG_NAME"
+team_name  = "TEAM_NAME"
+project_id = "PROJECT_ID"
 region     = "us-east-1"
 env = {
   "dev" = "dev"

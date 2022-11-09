@@ -20,6 +20,7 @@ phases:
     commands:
       - echo Build started on `date`
       - terraform --version
+      - cd lambda_bootstrap/
       - echo Updating ENV_namespace in terraform.tfvars
       - cat terraform.tfvars | hclq set 'env_namespace' $ENV_NAMESPACE | hclq set 'ecr_repo_url' $REPO_URI | hclq set 'ecr_repo_arn' $REPO_ARN | tee terraform.tfvars
       - terraform init -input=false

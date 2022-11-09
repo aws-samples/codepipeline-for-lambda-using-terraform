@@ -129,7 +129,9 @@ resource "aws_iam_role_policy" "lambda_codebuild_role_policy" {
       ],
       "Resource": [
         "${aws_s3_bucket.codepipeline_bucket.arn}",
-        "${aws_s3_bucket.codepipeline_bucket.arn}/*"
+        "${aws_s3_bucket.codepipeline_bucket.arn}/*",
+        "arn:aws:s3:::BUCKET_NAME",
+        "arn:aws:s3:::BUCKET_NAME/*"
       ]
     }
   ]

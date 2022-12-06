@@ -2,8 +2,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
-terraform
-{
+terraform {
     backend "s3" {
       encrypt = true
       bucket = "BUCKET_NAME"
